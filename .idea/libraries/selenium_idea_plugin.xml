@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="selenium_idea_plugin">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../downloads/selenium_idea_plugin" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

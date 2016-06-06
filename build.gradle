@@ -1,19 +1,47 @@
 apply plugin: "groovy"
+apply plugin: 'java'
 
 repositories {
-	jcenter()
+    maven {
+        url "http://repo.bodar.com"
+    }
+    mavenCentral()
+}
+
+buildscript {
+    repositories {
+        maven {
+            url "http://repo.bodar.com"
+        }
+        mavenCentral()
+    }
+}
+
+ext {
+    groovyVersion = '2.4.5'
+    gebVersion = '0.12.2'
+    seleniumVersion = '2.51.0'
+    chromeDriverVersion = '2.10'
+    cucumberGherkinVersion = '2.12.2'
+    cucumberVersion = '1.2.4'
 }
 
 dependencies {
-	testCompile "org.codehaus.groovy:groovy-all:2.4.3"
-	testCompile "org.seleniumhq.selenium:selenium-firefox-driver:2.45.0"
-	testCompile "org.gebish:geb-core:0.10.0"
-	testCompile "info.cukes:cucumber-groovy:1.2.0"
-	testCompile "info.cukes:gherkin:2.12.2"
+    testCompile "org.codehaus.groovy:groovy-all:${groovyVersion}"
+    testCompile "org.seleniumhq.selenium:selenium-firefox-driver:${seleniumVersion}"
+    testCompile "org.seleniumhq.selenium:selenium-support:${seleniumVersion}"
+    testCompile "org.gebish:geb-core:${gebVersion}"
+    testCompile "info.cukes:gherkin:${cucumberGherkinVersion}"
+    testCompile "info.cukes:cucumber-groovy:${cucumberVersion}"
+    compile group: 'info.cukes', name: 'cucumber-junit', version: "$cucumberVersion"
+    compile group: 'info.cukes', name: 'cucumber-core', version: "$cucumberVersion"
+    compile group: 'info.cukes', name: 'cucumber-java', version: "$cucumberVersion"
+    compile files("$buildDir/classes/main")
 }
-
 configurations {
-	cucumberRuntime { extendsFrom testRuntime }
+    cucumberRuntime {
+        extendsFrom testRuntime
+    }
 }
 
 task cucumber() {
@@ -33,10 +61,5 @@ task cucumber() {
 }
 
 task wrapper(type: Wrapper) {
-	gradleVersion = '2.3'
-}
-
-task mytask(){
-	println("Hello World!!!!!!")
-
+	gradleVersion = '2.7'
 }

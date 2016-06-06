@@ -1,6 +1,6 @@
 driver = "firefox"
-reportsDir = "build/reports/geb"
-baseUrl = "http://gebish.org"
+//reportsDir = "build/reports/geb"
+baseUrl = "https://www.linkedin.com/"
 waiting {
     timeout = 2
 }

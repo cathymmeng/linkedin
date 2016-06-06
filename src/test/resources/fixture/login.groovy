@@ -1,8 +1,8 @@
 package fixture
 
 [
-        'Cathy Test Account':[
-                login_email: "082-024",
-                login_pwd:"1234567890",
+        'Cathy':[
+                login_email: "login_email",
+                login_pwd:"login_pwd",
         ]
 ]

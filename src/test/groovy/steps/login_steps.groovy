@@ -1,4 +1,3 @@
-import geb.Browser
 import page.*
 
 import static cucumber.api.groovy.EN.*

@@ -1,7 +1,7 @@
 package fixture
 
 [
-        'Cathy':[
+        'Credentials':[
                 login_email: "login_email",
                 login_pwd:"login_pwd",
         ]

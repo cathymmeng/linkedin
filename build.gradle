@@ -28,11 +28,12 @@ ext {
 
 dependencies {
     testCompile "org.codehaus.groovy:groovy-all:${groovyVersion}"
-    testCompile "org.seleniumhq.selenium:selenium-firefox-driver:${seleniumVersion}"
+//    testCompile "org.seleniumhq.selenium:selenium-firefox-driver:${seleniumVersion}"
     testCompile "org.seleniumhq.selenium:selenium-support:${seleniumVersion}"
     testCompile "org.gebish:geb-core:${gebVersion}"
     testCompile "info.cukes:gherkin:${cucumberGherkinVersion}"
     testCompile "info.cukes:cucumber-groovy:${cucumberVersion}"
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-firefox-driver', version:"${seleniumVersion}"
     compile group: 'info.cukes', name: 'cucumber-junit', version: "$cucumberVersion"
     compile group: 'info.cukes', name: 'cucumber-core', version: "$cucumberVersion"
     compile group: 'info.cukes', name: 'cucumber-java', version: "$cucumberVersion"
@@ -44,7 +45,7 @@ configurations {
     }
 }
 
-task cucumber() {
+task cathyLinkedin() {
 	dependsOn testClasses
 	doLast {
 		javaexec {

@@ -1,5 +1,5 @@
 <h3>Cucumber JVM with Gradle and Geb Skeleton</h3>
-<h4>This is to enable Geb Gradle using selenium ChromeDriver
+<h4>This is to enable Geb Gradle using selenium ChromeDriver</h4>
 
 This is a self exploratory example of automation framework build up on geb(selenium) & cucumber
 

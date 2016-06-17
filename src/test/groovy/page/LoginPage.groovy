@@ -10,9 +10,9 @@ class LoginPage extends Page {
         signInButton { $("input[name='submit']") }
 	}
 
-    def enableSignInButton() {
-        page.loginID = "mengcx@gmail.com"
-        page.loginPwd = "Ma0X1a0\$"
-        waitFor { signInButton.isEnabled() }
-    }
+//    def enableSignInButton() {
+//        page.loginID = "***"
+//        page.loginPwd = "***"
+//        waitFor { signInButton.isEnabled() }
+//    }
 }

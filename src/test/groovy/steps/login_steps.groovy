@@ -8,8 +8,8 @@ Given(~/I am on the "Login" page/) { ->
 
 When(~/I enter ID and password/) { ->
     at LoginPage
-    page.loginID = "********"
-    page.loginPwd = "********"
+    page.loginID = "mengcx@gmail.com"
+    page.loginPwd = "Ma0X1a0\$"
     waitFor { page.signInButton.isEnabled() }
     page.signInButton.click()
 }

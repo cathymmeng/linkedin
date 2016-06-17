@@ -28,7 +28,7 @@ ext {
 
 dependencies {
     testCompile "org.codehaus.groovy:groovy-all:${groovyVersion}"
-//    testCompile "org.seleniumhq.selenium:selenium-firefox-driver:${seleniumVersion}"
+    testCompile "org.seleniumhq.selenium:selenium-firefox-driver:${seleniumVersion}"
     testCompile "org.seleniumhq.selenium:selenium-support:${seleniumVersion}"
     testCompile "org.gebish:geb-core:${gebVersion}"
     testCompile "info.cukes:gherkin:${cucumberGherkinVersion}"

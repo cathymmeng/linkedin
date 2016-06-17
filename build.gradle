@@ -21,7 +21,7 @@ ext {
     groovyVersion = '2.4.5'
     gebVersion = '0.12.2'
     seleniumVersion = '2.51.0'
-    chromeDriverVersion = '2.10'
+    chromeDriverVersion = '2.53.0'
     cucumberGherkinVersion = '2.12.2'
     cucumberVersion = '1.2.4'
 }
@@ -30,6 +30,7 @@ dependencies {
     testCompile "org.codehaus.groovy:groovy-all:${groovyVersion}"
     testCompile "org.seleniumhq.selenium:selenium-firefox-driver:${seleniumVersion}"
     testCompile "org.seleniumhq.selenium:selenium-support:${seleniumVersion}"
+    testCompile "org.seleniumhq.selenium:selenium-chrome-driver:$chromeDriverVersion"
     testCompile "org.gebish:geb-core:${gebVersion}"
     testCompile "info.cukes:gherkin:${cucumberGherkinVersion}"
     testCompile "info.cukes:cucumber-groovy:${cucumberVersion}"

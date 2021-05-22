@@ -8,7 +8,7 @@
 3. Results of search are displaying in sorted order (based on logic of popularity/most relevant etc.)
 ```
 
-## STATEGY & APPROACH
+## STATEGY & APPROACH 
 
 #### POSITIVE SCENARIOS
 ```
@@ -33,6 +33,7 @@
 ## QUESTIONS & ASSUMPTIOMS
 
 ```
+0. Fucntion verification - accptance criteria???
 1. Whether there is concerns on performance (e.g. amount of time it taks for the page to load)?
 2. Lower level verification based on implementation logic has been done and searching results are satisfactory?
 3. Whether SEARCH function is case sensitive?
